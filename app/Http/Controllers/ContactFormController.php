@@ -24,6 +24,7 @@ class ContactFormController extends Controller
 
         ContactForm::create($validatedData);
 
-        return redirect()->back()->with('success', 'Thank you for your message!');
+        // return redirect()->back()->with('success', 'Thank you for your message!');
+        return view('thankyou');
     }
 }
